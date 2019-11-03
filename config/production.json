@@ -1,0 +1,7 @@
+{
+    "mongoURI": "mongodb+srv://asoulpro:asoulpro@devnetwork-rkjpb.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "thisisasecretcode",
+    "githubClientId": "ea1de4fcfe289cc66223",
+    "githubSecret": "da2e3d27e7243be7610ba3d5cd34eaff2e490bbc"
+  }
+  

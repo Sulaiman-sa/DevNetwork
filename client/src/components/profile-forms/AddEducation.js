@@ -32,12 +32,11 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Add Your Education</h1>
+      <h1 className='large text-primary'>إضف شهاداتك التعليمية</h1>
       <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any school or bootcamp that you
-        have attended
+        <i className='fas fa-code-branch' /> أضف أي شهادة حصلت عليها من جامعة أو دورة تدريبية
       </p>
-      <small>* = required field</small>
+      <small>* = مطلوب</small>
       <form
         className='form'
         onSubmit={e => {
@@ -48,7 +47,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* School or Bootcamp'
+            placeholder='* الجامعة أو المركز التدريبي'
             name='school'
             value={school}
             onChange={e => onChange(e)}
@@ -58,7 +57,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Degree or Certificate'
+            placeholder='* الشهادة'
             name='degree'
             value={degree}
             onChange={e => onChange(e)}
@@ -68,14 +67,14 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Field of Study'
+            placeholder='التخصص'
             name='fieldofstudy'
             value={fieldofstudy}
             onChange={e => onChange(e)}
           />
         </div>
         <div className='form-group'>
-          <h4>From Date</h4>
+          <h4>منذ</h4>
           <input
             type='date'
             name='from'
@@ -95,11 +94,11 @@ const AddEducation = ({ addEducation, history }) => {
                 toggleDisabled(!toDateDisabled);
               }}
             />{' '}
-            Current School
+            مازلت تدرس؟
           </p>
         </div>
         <div className='form-group'>
-          <h4>To Date</h4>
+          <h4>حتى</h4>
           <input
             type='date'
             name='to'
@@ -113,14 +112,14 @@ const AddEducation = ({ addEducation, history }) => {
             name='description'
             cols='30'
             rows='5'
-            placeholder='Program Description'
+            placeholder='وصف البرنامج التعليمي'
             value={description}
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn btn-primary my-1' />
+        <input type='submit' className='btn btn-primary my-1' value="إرسال" />
         <Link className='btn btn-light my-1' to='/dashboard'>
-          Go Back
+          عودة
         </Link>
       </form>
     </Fragment>

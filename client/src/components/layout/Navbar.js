@@ -8,21 +8,22 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>Developers</Link>
+        <Link to='/profiles'>الأعضاء</Link>
       </li>
       <li>
-        <Link to='/posts'>Posts</Link>
+        <Link to='/posts'>التعليقات</Link>
       </li>
       <li>
         <Link to='/dashboard'>
           <i className='fas fa-user' />{' '}
-          <span className='hide-sm'>Dashboard</span>
+          <span className='hide-sm'>لوحة التحكم</span>
         </Link>
       </li>
       <li>
+
         <a onClick={logout} href='#!'>
           <i className='fas fa-sign-out-alt' />{' '}
-          <span className='hide-sm'>Logout</span>
+          <span className='hide-sm'>خروج</span>
         </a>
       </li>
     </ul>
@@ -31,13 +32,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>Developers</Link>
+        <Link to='/profiles'>الأعضاء</Link>
       </li>
       <li>
-        <Link to='/register'>Register</Link>
+        <Link to='/register'>تسجيل</Link>
       </li>
       <li>
-        <Link to='/login'>Login</Link>
+        <Link to='/login'>دخول</Link>
       </li>
     </ul>
   );
@@ -46,7 +47,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-code' /> DevConnector
+          <i className='fas fa-code' /> المطورون العرب
         </Link>
       </h1>
       {!loading && (

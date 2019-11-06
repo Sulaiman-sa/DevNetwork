@@ -53,75 +53,71 @@ const Createprofile = ({
     <Redirect to='/dashboard' />
   ) : (
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
+      <h1 className='large text-primary'>إنشاء ملف شخصي</h1>
       <p className='lead'>
-        <i className='fas fa-user' /> Let's get some information to make your
-        profile stand out
+        <i className='fas fa-user' /> أضف ملعومات لتثري ملفك الشخصي
       </p>
-      <small>* = required field</small>
+      <small>* = مطلوب</small>
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <select name='status' value={status} onChange={e => onChange(e)}>
-            <option value='0'>* Select Professional Status</option>
-            <option value='Developer'>Developer</option>
-            <option value='Junior Developer'>Junior Developer</option>
-            <option value='Senior Developer'>Senior Developer</option>
-            <option value='Manager'>Manager</option>
-            <option value='Student or Learning'>Student or Learning</option>
-            <option value='Instructor'>Instructor or Teacher</option>
-            <option value='Intern'>Intern</option>
-            <option value='Other'>Other</option>
+            <option value='0'>* اختر المجال المهني</option>
+            <option value='Developer'>مطور</option>
+            <option value='Junior Developer'>مطور مبتدئ</option>
+            <option value='Senior Developer'>مطور خبير</option>
+            <option value='Manager'>مدير</option>
+            <option value='Student or Learning'>طالب</option>
+            <option value='Instructor'>معلم</option>
+            <option value='Intern'>متدرب</option>
+            <option value='Other'>أخرى</option>
           </select>
           <small className='form-text'>
-            Give us an idea of where you are at in your career
+            أضف بعض التفاصيل حول تقدمك في مجالك المهني
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Company'
+            placeholder='الشركة'
             name='company'
             value={company}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own company or one you work for
+            يمكن أن تكون شركتك الخاصة
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Website'
+            placeholder='الموقع'
             name='website'
             value={website}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own or a company website
+            يمكن أن يكون موقعك الخاص
           </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Location'
+            placeholder='المكان'
             name='location'
             value={location}
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
-          </small>
         </div>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* Skills'
+            placeholder='* المهارات'
             name='skills'
             value={skills}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+           الرجاء استخدام الفاصلة لتفصل بين المهارات، مثلا (HTML,CSS,JavaScript,PHP)
           </small>
         </div>
         <div className='form-group'>
@@ -133,18 +129,16 @@ const Createprofile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            If you want your latest repos and a Github link, include your
-            username
+            إذا أردت إضافة بيانات حسابك في Github، فضلا أضف اسم المستخدم
           </small>
         </div>
         <div className='form-group'>
           <textarea
-            placeholder='A short bio of yourself'
+            placeholder='وصف موجز عن نفسك'
             name='bio'
             value={bio}
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>Tell us a little about yourself</small>
         </div>
 
         <div className='my-2'>
@@ -153,9 +147,9 @@ const Createprofile = ({
             type='button'
             className='btn btn-light'
           >
-            Add Social Network Links
+            إضافة حساباتك في مواقع التواصل الإجتماعي
           </button>
-          <span>Optional</span>
+          <span>اختياري</span>
         </div>
         {displaySocialInputs && (
           <Fragment>
@@ -216,9 +210,9 @@ const Createprofile = ({
           </Fragment>
         )}
 
-        <input type='submit' className='btn btn-primary my-1' />
+        <input type='submit' className='btn btn-primary my-1' value="إرسال" />
         <Link className='btn btn-light my-1' to='/dashboard'>
-          Go Back
+          عودة
         </Link>
       </form>
     </Fragment>

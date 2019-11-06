@@ -13,13 +13,13 @@ const ProfileEducation = ({
       {!to ? ' Now' : <Moment format="YYYY/MM/DD">{moment.utc(to)}</Moment>}
     </p>
     <p>
-      <strong>Degree: </strong> {degree}
+      <strong>الشهادة: </strong> {degree}
     </p>
     <p>
-      <strong>Field Of Study: </strong> {fieldofstudy}
+      <strong>التخصص: </strong> {fieldofstudy}
     </p>
     <p>
-      <strong>Description: </strong> {description}
+      <strong>الوصف: </strong> {description}
     </p>
   </div>
 );

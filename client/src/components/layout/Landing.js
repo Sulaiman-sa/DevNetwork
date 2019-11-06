@@ -12,22 +12,22 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Developer Connector</h1>
+          <h1 className='x-large'>شبكة المطورين العرب</h1>
           <p className='lead'>
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
+           تواصل مع أقرانك من المبرمجين والمطورين العرب لتتعلم وتضيف للمحتوى العربي.
           </p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
-              Sign Up
+              تسجيل
             </Link>
             <Link to='/login' className='btn btn-light'>
-              Login
+              دخول
             </Link>
           </div>
         </div>
       </div>
     </section>
+    
   );
 };
 

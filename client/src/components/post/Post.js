@@ -18,7 +18,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
   ) : (
     <Fragment>
       <Link to='/posts' className='btn'>
-        Back To Posts
+        عودة إلى المنشورات
       </Link>
       <PostItem post={post} showActions={false} />
       <CommentForm postId={post._id} />

@@ -33,15 +33,15 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Sign Up</h1>
+      <h1 className='large text-primary'>تسجيل</h1>
       <p className='lead'>
-        <i className='fas fa-user' /> Create Your Account
+        <i className='fas fa-user' /> تسجيل عضوية جديدة
       </p>
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Name'
+            placeholder='الاسم'
             name='name'
             value={name}
             onChange={e => onChange(e)}
@@ -50,20 +50,19 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='email'
-            placeholder='Email Address'
+            placeholder='الايميل'
             name='email'
             value={email}
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            This site uses Gravatar so if you want a profile image, use a
-            Gravatar email
+            هذا الموقع يستخدم "جرافاتار" اذا كنت تريد صور شخصية؛ استخدم ايميل متوافق مع جرافاتار
           </small>
         </div>
         <div className='form-group'>
           <input
             type='password'
-            placeholder='Password'
+            placeholder='الرمز السري'
             name='password'
             value={password}
             onChange={e => onChange(e)}
@@ -72,16 +71,16 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <div className='form-group'>
           <input
             type='password'
-            placeholder='Confirm Password'
+            placeholder='تأكيد الرمز السري'
             name='password2'
             value={password2}
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn btn-primary' value='Register' />
+        <input type='submit' className='btn btn-primary' value='تسجيل' />
       </form>
       <p className='my-1'>
-        Already have an account? <Link to='/login'>Sign In</Link>
+        لديك حساب بالفعل؟ <Link to='/login'>سجل دخولك</Link>
       </p>
     </Fragment>
   );

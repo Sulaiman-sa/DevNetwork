@@ -4,9 +4,9 @@ const NotFound = () => {
   return (
     <Fragment>
       <h1 className='x-large text-primary'>
-        <i className='fas fa-exclamation-triangle' /> Page Not Found
+        <i className='fas fa-exclamation-triangle' /> الصفحة مفقودة
       </h1>
-      <p className='large'>Sorry, this page does not exist</p>
+      <p className='large'>عذرًا، هذه الصفحة غير موجودة.</p>
     </Fragment>
   );
 };

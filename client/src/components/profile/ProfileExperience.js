@@ -13,13 +13,13 @@ const ProfileExperience = ({
       {!to ? ' Now' : <Moment format="YYYY/MM/DD">{moment.utc(to)}</Moment>}
     </p>
     <p>
-      <strong>Position: </strong> {title}
+      <strong>المنصب: </strong> {title}
     </p>
     <p>
-      <strong>Location: </strong> {location}
+      <strong>الموقع: </strong> {location}
     </p>
     <p>
-      <strong>Description: </strong> {description}
+      <strong>الوصف: </strong> {description}
     </p>
   </div>
 );

@@ -6,7 +6,7 @@ DevNetwork is a social network for arab developers.  It is built using the *MERN
 
 this app is deployed using heroku at https://thawing-sierra-23068.herokuapp.com  
 
-if you want to run it locally, clone the project then:
+if you want to run it locally, first clone the project then:
 
 ```
 Go to config folder and create default.json

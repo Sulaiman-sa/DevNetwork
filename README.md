@@ -1,6 +1,6 @@
 # DevNetwork
 
-DevNetwork is a social network for arab developers.  It is built using the *MERN* stack, and includes authentication form posts, creating and editing profiles and more.
+DevNetwork is a social network for arab developers.  It is built using the *MERN* stack, and includes authentication, form posts, creating and editing profiles and more.
 
 ## Getting Started
 
